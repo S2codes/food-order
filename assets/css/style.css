@@ -333,6 +333,12 @@ footer {
 
 
 @media screen and (max-width: 900px){
+    .topbarClock{
+        display: none;
+    }
+    .mainHeading {
+        font-size: 2rem;
+    }
     .hero_right{
         display: none;
     }
@@ -342,12 +348,26 @@ footer {
     .categoryItem a img {
         width: 7rem;
     }
+    .about_left ul li img{
+        height: 15rem;
+    }
+    
     .workSec p {
-        width: 90%;
+        width: 100%;
+    }
+    .worklist {
+        flex-direction: column;
+    }
+    .workitem{
+        width: 100%;
     }
     .workitem p {
         font-size: 1rem;
     }
+    .workBrnGroup{
+        flex-direction: column;
+    }
+    
     .reservationSec_right form {
         height: 490px;
     }
@@ -355,6 +375,9 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .reservationformBtnGrp button{
+        width: 100%!important;
     }
 
 
