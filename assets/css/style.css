@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --orange: #ff9409;
+    --red: #e04218;
+    --black: #483c36;
+    --gray: #6b6a6a;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+}
+/* component start  */
+.row{
+    margin: 0;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upPara{
+    color: var(--red);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0;
+}
+.para{
+    color: var(--gray);
+    font-size: 1.1rem;
+    margin: 0;
+}
+.heading{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.subheading{
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+
+/* component end */
+.topbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(11, 11, 11, 0.844);
+    color: #fff;
+}
+.topbar ul{
+    display: flex;
+}
+.hero_main{
+    min-height: 60vh;
+    /* border: 2px solid red; */
+}
+.hero_left{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+.maintopHeading{
+    font-size: 1.5rem;
+    color: var(--red);
+    font-weight: 300;
+}
+.mainHeading{
+    font-size: 3rem;
+    font-weight: 300;
+}
+.mainHeading span{
+    font-size: 3.4rem;
+    font-weight: 900;
+}
+.mainPara{
+    font-size: 1rem;
+    color: #6b6a6a;
+}
+.btn-reserve{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: var(--orange);
+    color: #fff;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
+}
+.btn-menu{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1.5px solid var(--orange);
+    color: #000;
+}
+.btn-red{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: var(--red);
+    color: #fff;
+}
+.callus{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+}
+.callus a{
+    color: #000;
+    text-decoration: none;
+    color: var(--red);
+}
+
+.hero_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_right img{
+    object-fit: cover;
+}
+/* .categorieslist{
+    border: 2px solid black;
+} */
+.categorieslist ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.categoryItem{
+    /* border: 2px solid black; */
+    width: fit-content;
+}
+.categoryItem a{
+    text-decoration:  none;
+    flex-direction: column;
+}
+.categoryItem a img{
+    width: 10rem;
+    height: 9rem;
+    object-fit: contain;
+}
+.categoryItem a p{
+    color: var(--red);
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+}
+.categoryItem:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* .aboutSec{
+    border: 2px solid red;
+} */
+.about_left{
+    /* border:  2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about_left ul li{
+    position: relative;
+}
+.about_left ul li img{
+    height: 30rem;
+    object-fit: cover;
+    width: 100%;
+}
+.about_left ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.388);
+    width: 100%;
+    height: 100%;
+}
+.workSec{
+    background-color: var(--orange);
+    min-height: 70vh;
+    color: #fff;
+}
+
+.workSec p{
+    width: 60%;
+    margin: 0 auto;
+}
+.worklist{
+    /* border: 2px solid black; */
+    display: flex;
+}
+.workitem{
+    /* border: 2px solid blue; */
+    width: 33.3%;
+    flex-direction: column;
+}
+.workitem i{
+    background: #fff;
+    color: var(--red);
+    padding: 1.6rem;
+    font-size: 3.5rem;
+    border-radius: 50%;
+}
+.workitem p{
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    color: #000;
+    text-transform: capitalize;
+}
+.reservationSec{
+    /* min-height: 90vh; */
+    background-image: url('../img/reservation-bg.jpg');
+    background-attachment: fixed;
+}
+
+.reservationSec_left{
+    /* border: 2px solid black; */
+    flex-direction: column;
+    align-items: flex-start;
+    /* height: 40rem; */
+}
+
+.workBrnGroup a{
+    /* width: 20rem; */
+    display: inline-block;
+}
+.workBrnGroup a img{
+    border: 1.8px solid #fff;
+    border-radius: 5px;
+    width: 15rem;
+}
+
+.reservationSec_right form{
+    height: 450px;
+}
+.reservationSec_right form input, .reservationSec_right form textarea{
+    /* border: 2px solid blue; */
+    padding: 0.6rem 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.9rem;
+}
+
+.reviewItem{
+    text-align: center;
+    font-style: italic;
+}
+.fa-quote-right, .fa-quote-left{
+    color: var(--red);
+}
+.reviewUser{
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.gallerylist img{
+    width: 20%;
+    object-fit: cover;
+}
+
+.productItem{
+    width: 100%;
+}
+
+.productThumb{
+    position: relative;
+}
+.productItem .productThumb img{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+.productDiscount{
+    background-color: var(--orange);
+    color: #fff;
+    width: fit-content;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.productTitle{
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+.productPrice{
+    font-size: 1.5rem;
+    color: var(--red);
+}
+.productItem:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.stickyNav{
+    background-color: var(--red);
+    color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100vw;
+}
+
+
+footer {
+    background-color: #000;
+    color: var(--gray);
+}
+
+
+@media screen and (max-width: 900px){
+    .hero_right{
+        display: none;
+    }
+    .categorieslist ul{
+        flex-wrap: wrap;
+    }
+    .categoryItem a img {
+        width: 7rem;
+    }
+    .workSec p {
+        width: 90%;
+    }
+    .workitem p {
+        font-size: 1rem;
+    }
+    .reservationSec_right form {
+        height: 490px;
+    }
+    .reservationformBtnGrp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}

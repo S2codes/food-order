@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;800;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8f7c5a9c29.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Food Order</title>
+</head>
+
+<body>
+  <header>
+    <!-- topbar  -->
+    <div class="topbar p-2">
+      <ul class="p-0 ms-4 m-0 list-unstyled">
+        <li class="me-3"><i class="fas fa-map-marker-alt"></i> Siliguri</li>
+        <li class="me-3"><i class="fas fa-clock"></i> Mon-Sun: 11.30AM - 10.30PM</li>
+      </ul>
+
+      <ul class="p-0 me-4 m-0 list-unstyled">
+        <li class="me-3">Zomato</li>
+        <li>Swigy</li>
+      </ul>
+
+    </div>
+<!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light px-4 " id="mainNav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+
+          </ul>
+          <div class="d-flex">
+            <div class="callus p-2" >
+              <a href="#" id="callus"><i class="fas fa-phone-alt"></i> Call to Order</a>
+            </div>
+            <button class="ms-3 btn btn-reserve">Reservation</button>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- hero section  -->
+  <div class="row">
+    <div class="col-md-11 col-12 mx-auto">
+      <div class="row hero_main">
+        <div class="col-md-6 col-12 hero_left">
+          <p class="maintopHeading m-0">Grab the Delicious Bite</p>
+          <h1 class="mainHeading"><span>Food</span> You Love, delivered to you</h1>
+          <p class="mainPara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab rem odio doloribus nam quod
+            nulla distinctio, dicta ad labore, blanditiis voluptatum iusto </p>
+          <div class="head_btnGroup">
+            <button class="btn btn-reserve btn-lg shadow">Reserve your Table</button>
+            <button class="btn btn-menu btn-lg ms-3 px-4">Menu</button>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-12 hero_right">
+          <img src="assets/img/main.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="row">
+      <div class="col-md-11 col-12 mx-auto">
+
+        <!-- category -->
+        <div class="categorieslist my-3">
+          <ul class="list-unstyled p-0 m-0">
+
+            <li class="categoryItem p-2 m-2">
+              <a href="#" class="center">
+                <img src="assets/img/categories/soup.jpg" alt="">
+                <p class="mt-3 m-0">Soup</p>
+              </a>
+            </li>
+            <li class="categoryItem p-2 m-2">
+              <a href="#" class="center">
+                <img src="assets/img/categories/nodels.jpg" alt="">
+                <p class="mt-3 m-0">Nodels</p>
+              </a>
+            </li>
+            <li class="categoryItem p-2 m-2">
+              <a href="#" class="center">
+                <img src="assets/img/categories/salad 2.png" alt="">
+                <p class="mt-3 m-0">Salad</p>
+              </a>
+            </li>
+            <li class="categoryItem p-2 m-2">
+              <a href="#" class="center">
+                <img src="assets/img/categories/rice.png" alt="">
+                <p class="mt-3 m-0">fried rice</p>
+              </a>
+            </li>
+            <li class="categoryItem p-2 m-2">
+              <a href="#" class="center">
+                <img src="assets/img/categories/beverage.webp" alt="">
+                <p class="mt-3 m-0">beverage</p>
+              </a>
+            </li>
+
+            <li class="categoryItem p-2 m-2">
+              <a href="#" class="center">
+                <img src="assets/img/categories/nodels.jpg" alt="">
+                <p class="mt-3 m-0">Nodels</p>
+              </a>
+            </li>
+
+
+          </ul>
+        </div>
+
+
+         <!-- products  -->
+   <div class="container-fluid my-5 productSec">
+     <p class="heading text-center m-0">Explore Hot Menu</p>
+     <p class="para text-center mb-3">Chase the exotic Chinese flavours</p>
+
+    <div class="row">
+      
+      <div class="col-md-3 col-12 mb-3">
+        <div class="productItem">
+          <div class="productThumb">
+            <img src="assets/img/p1-min.jpg" alt="">
+            <div class="productDiscount p-2">10% Off</div>
+          </div>
+          <div class="productInfo p-2">
+            <p class="productTitle m-0">Panner</p>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="productPrice m-0"> 350 ₹</p>
+            <button class="btn btn-lg btn-red">Order Now <i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-12 mb-3">
+        <div class="productItem">
+          <div class="productThumb">
+            <img src="assets/img/p2-min.jpg" alt="">
+            <div class="productDiscount p-2">15% Off</div>
+          </div>
+          <div class="productInfo p-2">
+            <p class="productTitle m-0">Egg Biryani</p>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="productPrice m-0"> 250 ₹</p>
+            <button class="btn btn-lg btn-red">Order Now <i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-12 mb-3">
+        <div class="productItem">
+          <div class="productThumb">
+            <img src="assets/img/p3-min.jpg" alt="">
+            <div class="productDiscount p-2">10% Off</div>
+          </div>
+          <div class="productInfo p-2">
+            <p class="productTitle m-0">Biriyani</p>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="productPrice m-0"> 350 ₹</p>
+            <button class="btn btn-lg btn-red">Order Now <i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-12 mb-3">
+        <div class="productItem">
+          <div class="productThumb">
+            <img src="assets/img/categories/rice.png" alt="">
+            <div class="productDiscount p-2">5% Off</div>
+          </div>
+          <div class="productInfo p-2">
+            <p class="productTitle m-0">Fried Rice</p>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="productPrice m-0"> 150 ₹</p>
+            <button class="btn btn-lg btn-red">Order Now <i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+
+
+        <!-- specailty  -->
+        <div class="aboutSec my-5">
+          <div class="row">
+            <div class="col-md-6 col-12 about_left p-3">
+              <p class="upPara">About Us</p>
+              <h2 class="heading">Know About our speciality</h2>
+              <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt molestias, aut sequi
+                deleniti autem assumenda repellendus, molestiae dolores fugiat ratione laborum culpa suscipit, incidunt
+                officia earum quaerat libero commodi possimus!</p>
+
+              <div class="mt-3">
+                <button class="btn btn-reserve btn-lg">Order Now</button>
+
+                <button class="btn btn-menu btn-lg ms-3">Menu</button>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12 about_left m-0 p-0">
+              <ul class="list-unstyled m-0 p-0" id="specailSlider">
+                <li class="center">
+                  <img src="assets/img/special/2.jpg" alt="">
+                </li>
+                <li class="center">
+                  <img src="assets/img/special/3.jpg" alt="">
+                </li>
+                <li class="center">
+                  <img src="assets/img/special/1.jpg" alt="">
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </main>
+
+  <!-- how it works  -->
+  <div class="container-fluid workSec mt-5 p-3">
+    <h3 class="heading text-center mt-3">How it Works</h3>
+    <p class="para text-light text-center ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit nemo Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, corrupti.</p>
+
+    <ul class="list-unstyled worklist mt-3 m-0 p-0">
+      <li class="workitem p-3 center mb-3">
+        <i class="fas fa-phone-alt"></i>
+        <p class="mt-3"> Call Us to Order</p>
+      </li>
+
+      <li class="workitem p-3 center mb-3">
+        <i class="fas fa-shopping-cart"></i>
+        <p class="mt-3"> Call Us to Order</p>
+      </li>
+      <li class="workitem p-3 center mb-3">
+        <i class="fas fa-truck"></i>
+        <p class="mt-3"> Call Us to Order</p>
+      </li>
+
+    </ul>
+
+    <div class="center mt-3">
+      <button class="btn btn-lg btn-red px-5">Order Now</button>
+    </div>
+
+  </div>
+
+   <!-- products  -->
+   <div class="container-fluid my-5 productSec">
+    <div class="row">
+      
+      <div class="col-md-3 col-12 mb-3">
+        <div class="productItem">
+          <div class="productThumb">
+            <img src="assets/img/p1-min.jpg" alt="">
+            <div class="productDiscount p-2">10% Off</div>
+          </div>
+          <div class="productInfo p-2">
+            <p class="productTitle m-0">Panner</p>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="productPrice m-0"> 350 ₹</p>
+            <button class="btn btn-lg btn-red">Order Now <i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-12 mb-3">
+        <div class="productItem">
+          <div class="productThumb">
+            <img src="assets/img/p2-min.jpg" alt="">
+            <div class="productDiscount p-2">15% Off</div>
+          </div>
+          <div class="productInfo p-2">
+            <p class="productTitle m-0">Egg Biryani</p>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="productPrice m-0"> 250 ₹</p>
+            <button class="btn btn-lg btn-red">Order Now <i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-12 mb-3">
+        <div class="productItem">
+          <div class="productThumb">
+            <img src="assets/img/p3-min.jpg" alt="">
+            <div class="productDiscount p-2">10% Off</div>
+          </div>
+          <div class="productInfo p-2">
+            <p class="productTitle m-0">Biriyani</p>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="productPrice m-0"> 350 ₹</p>
+            <button class="btn btn-lg btn-red">Order Now <i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-12 mb-3">
+        <div class="productItem">
+          <div class="productThumb">
+            <img src="assets/img/categories/rice.png" alt="">
+            <div class="productDiscount p-2">5% Off</div>
+          </div>
+          <div class="productInfo p-2">
+            <p class="productTitle m-0">Fried Rice</p>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="productPrice m-0"> 150 ₹</p>
+            <button class="btn btn-lg btn-red">Order Now <i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+  <!-- Reservation  -->
+  <div class="reservationSec container-fluid mb-5">
+    <div class="row">
+
+      <div class="col-md-6 col-12 reservationSec_left center mt-5 mb-3 py-3">
+        <h4 class="heading text-light">Reserve A Table of Deliciousness</h4>
+        <p class="subheading text-light">Or Order Through</p>
+
+        <div class="workBrnGroup my-3 d-flex">
+          <a href="#">
+            <img src="assets/img/component/zomato2.jpg" alt="">
+          </a>
+          <a href="#" class="ms-2">
+            <img src="assets/img/component/swiggy2.jpg" alt="">
+          </a>
+
+        </div>
+      </div>
+
+      <div class="col-md-6 col-12 reservationSec_right my-5 py-3">
+
+        <form action="" method="post">
+          <div class="row">
+
+            <div class="col-md-6 col-12 mb-3">
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="col-md-6 col-12 mb-3">
+              <input type="tel" class="form-control" placeholder="Contact Number">
+            </div>
+            <div class="col-md-6 col-12 mb-3">
+              <!-- <input type="date" class="form-control" placeholder="Date of Reservation" > -->
+              <input type="text" class="form-control" placeholder="Date of Reservation" onfocus="(this.type='date')">
+            </div>
+            <div class="col-md-6 col-12 mb-3">
+              <input type="number" class="form-control" placeholder="Number of Seats">
+            </div>
+            <div class="col-md-12 col-12 mb-3">
+              <textarea name="" id="" class="form-control" cols="30" rows="5"
+                placeholder="Write Your Message"></textarea>
+            </div>
+            <div class="mb-3 mt-3 reservationformBtnGrp">
+              <button class="btn  btn-lg btn-reserve w-50">Submit Request</button>
+            </div>
+
+          </div>
+        </form>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- reviews  -->
+  <div class="container-fluid reviewSec my-5">
+    <h4 class="heading text-center my-3">Feedback</h4>
+    <div class="row">
+      <div class="col-md-8 col-12 mx-auto ">
+        <ul class="list-unstyled m-0 p-0 reviewList">
+          <li class="para reviewItem p-2"><i class="fas fa-quote-left"></i>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione earum saepe distinctio.
+            Ratione earum saepe distinctio. earum saepe distinctio.
+            <i class="fas fa-quote-right"></i>
+            <p class="mt-2 m-0 reviewUser">Subhankar Sarkar</p>
+          </li>
+          <li class="para reviewItem p-2"><i class="fas fa-quote-left"></i>
+            ipisicing elit. Ratione earum saepe distinctio.
+            Ratione earum saepe distinctio. earum saepe distinctio.
+            <i class="fas fa-quote-right"></i>
+            <p class="mt-2 m-0 reviewUser">Guest User</p>
+          </li>
+          <li class="para reviewItem p-2"><i class="fas fa-quote-left"></i>
+            ipisicing elit. Ratione earum saepe distinctio.
+            Ratione earum saepe distinctio. earum saepe distinctio. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Vel consequuntur nostrum molestiae nulla quisquam recusandae quos, consequatur tempore impedit
+            laborum. Ex labore sapiente, adipisci aperiam quod minus sed cumque architecto.
+            <i class="fas fa-quote-right"></i>
+            <p class="mt-2 m-0 reviewUser">another Guest User</p>
+          </li>
+
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- gallery  -->
+  <div class="container-fluid mt-5 p-0">
+    <div class="gallerylist w-100 d-flex">
+      <img src="assets/img/res/1 (1).jpg" alt="">
+      <img src="assets/img/res/1 (2).jpg" alt="">
+      <img src="assets/img/res/1 (3).jpg" alt="">
+      <img src="assets/img/res/1 (4).jpg" alt="">
+      <img src="assets/img/res/1 (5).jpg" alt="">
+    </div>
+  </div>
+
+<!-- map  -->
+<div class="container-fluid p-0">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.766995294036!2d88.43037895017558!3d26.71988977471542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e441122954defb%3A0xe3acf67d2c7060bf!2sReboot%20Marketing%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1653222169865!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+  <footer class="py-7 py-md-9 pt-5 ">
+    <div class="container px-4">
+      <div class="row gx-7">
+        <div class="col-sm-4">
+
+          <!-- Heading -->
+          <h5 class="text-xs text-light">
+            About Us
+          </h5>
+
+          <!-- Text -->
+          <p class="mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorum, sint corporis nostrum, possimus
+            unde eos vitae eius quasi saepe.
+          </p>
+
+        </div>
+        <div class="col-sm-4">
+
+          <!-- Heading -->
+          <h5 class="text-xs text-light">
+            Contact info
+          </h5>
+
+          <!-- List -->
+          <ul class="list-unstyled mb-6">
+            <li class="d-flex mb-2">
+              <div class="fas fa-map-marker-alt me-3 mt-2 fs-sm"></div>
+              1234 Altschul, Los Angeles, CA 10027-0000
+            </li>
+            <li class="d-flex mb-2">
+              <div class="fas fa-phone me-3 mt-2 fs-sm"></div>
+              +1 987 654 3210
+            </li>
+            <li class="d-flex">
+              <div class="far fa-envelope me-3 mt-2 fs-sm"></div>
+              <a href="mailto:admin@domain.com" class="text-light">admin@domain.com</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-sm-4">
+
+          <!-- Heading -->
+          <h5 class="text-xs light">
+            Opening hours
+          </h5>
+
+          <!-- Text -->
+          <div class="mb-3">
+            <div class="text-xs">Monday - Thursday</div>
+            <div class="font-serif">10:00 AM - 11:00 PM</div>
+          </div>
+
+          <!-- Text -->
+          <div class="mb-6">
+            <div class="text-xs">Friday - Sunday</div>
+            <div class="font-serif">12:00 AM - 03:00 AM</div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+
+          <!-- Copyright -->
+          <div class="d-flex align-items-center my-4">
+            <hr class="hr-sm me-3" style="height: 1px;"> © 2021 foodorder. All rights reserved.
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    
+    $(document).ready(function () {
+      console.log('heelo query');
+
+      // specailSlider
+      $('#specailSlider').slick({
+        autoplay: true,
+        arrows: false,
+        infinite: true,
+        autoplaySpeed: 1000,
+      });
+      $('.reviewList').slick({
+        autoplay: true,
+        arrows: false,
+        infinite: true,
+        autoplaySpeed: 1000,
+      });
+
+    })
+  </script>
+
+</body>
+
+</html>
