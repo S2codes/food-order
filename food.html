@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8f7c5a9c29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Food Order</title>
+</head>
+
+<body>
+    <header>
+        <!-- topbar  -->
+        <div class="topbar p-2">
+            <ul class="p-0 ms-4 m-0 list-unstyled">
+                <li class="me-3"><i class="fas fa-map-marker-alt"></i> Siliguri</li>
+                <li class="me-3 topbarClock"><i class="fas fa-clock"></i> Mon-Sun: 11.30AM - 10.30PM</li>
+            </ul>
+
+            <ul class="p-0 me-4 m-0 list-unstyled">
+                <li class="me-3">Zomato</li>
+                <li>Swigy</li>
+            </ul>
+
+        </div>
+        <!-- navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-light px-4 " id="mainNav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="food.html">Food</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex">
+                        <div class="callus p-2">
+                            <a href="#" id="callus"><i class="fas fa-phone-alt"></i> Call to Order</a>
+                        </div>
+                        <button class="ms-3 btn btn-reserve">Reservation</button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <main>
+        <div class="row">
+            <div class="col-md-12 col-12 mx-auto">
+
+
+                <!-- products  -->
+                <div class="container-fluid my-5 productSec">
+
+                    <div class="row mb-2">
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p1-min.jpg" alt="">
+                                    <div class="productDiscount p-2">10% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Panner</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 350 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p2-min.jpg" alt="">
+                                    <div class="productDiscount p-2">15% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Egg Biryani</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 250 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p3-min.jpg" alt="">
+                                    <div class="productDiscount p-2">10% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Biriyani</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 350 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/categories/rice.png" alt="">
+                                    <div class="productDiscount p-2">5% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Fried Rice</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 150 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="row mb-2">
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p1-min.jpg" alt="">
+                                    <div class="productDiscount p-2">10% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Panner</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 350 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p2-min.jpg" alt="">
+                                    <div class="productDiscount p-2">15% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Egg Biryani</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 250 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p3-min.jpg" alt="">
+                                    <div class="productDiscount p-2">10% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Biriyani</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 350 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/categories/rice.png" alt="">
+                                    <div class="productDiscount p-2">5% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Fried Rice</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 150 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="row mb-2">
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p1-min.jpg" alt="">
+                                    <div class="productDiscount p-2">10% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Panner</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 350 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p2-min.jpg" alt="">
+                                    <div class="productDiscount p-2">15% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Egg Biryani</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 250 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p3-min.jpg" alt="">
+                                    <div class="productDiscount p-2">10% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Biriyani</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 350 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/categories/rice.png" alt="">
+                                    <div class="productDiscount p-2">5% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Fried Rice</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 150 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="row mb-2">
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p1-min.jpg" alt="">
+                                    <div class="productDiscount p-2">10% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Panner</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 350 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p2-min.jpg" alt="">
+                                    <div class="productDiscount p-2">15% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Egg Biryani</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 250 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p3-min.jpg" alt="">
+                                    <div class="productDiscount p-2">10% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Biriyani</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 350 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/categories/rice.png" alt="">
+                                    <div class="productDiscount p-2">5% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Fried Rice</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 150 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="row mb-2">
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p1-min.jpg" alt="">
+                                    <div class="productDiscount p-2">10% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Panner</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 350 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p2-min.jpg" alt="">
+                                    <div class="productDiscount p-2">15% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Egg Biryani</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 250 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/p3-min.jpg" alt="">
+                                    <div class="productDiscount p-2">10% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Biriyani</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 350 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="productItem">
+                                <div class="productThumb">
+                                    <img src="assets/img/categories/rice.png" alt="">
+                                    <div class="productDiscount p-2">5% Off</div>
+                                </div>
+                                <div class="productInfo p-2">
+                                    <p class="productTitle m-0">Fried Rice</p>
+                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="productPrice m-0"> 150 ₹</p>
+                                    <button class="btn btn-lg btn-red">Order Now <i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="py-7 py-md-9 pt-5 ">
+        <div class="container px-4">
+            <div class="row gx-7">
+                <div class="col-sm-4">
+
+                    <!-- Heading -->
+                    <h5 class="text-xs text-light">
+                        About Us
+                    </h5>
+
+                    <!-- Text -->
+                    <p class="mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorum, sint corporis
+                        nostrum, possimus
+                        unde eos vitae eius quasi saepe.
+                    </p>
+
+                </div>
+                <div class="col-sm-4">
+
+                    <!-- Heading -->
+                    <h5 class="text-xs text-light">
+                        Contact info
+                    </h5>
+
+                    <!-- List -->
+                    <ul class="list-unstyled mb-6">
+                        <li class="d-flex mb-2">
+                            <div class="fas fa-map-marker-alt me-3 mt-2 fs-sm"></div>
+                            1234 Altschul, Los Angeles, CA 10027-0000
+                        </li>
+                        <li class="d-flex mb-2">
+                            <div class="fas fa-phone me-3 mt-2 fs-sm"></div>
+                            +1 987 654 3210
+                        </li>
+                        <li class="d-flex">
+                            <div class="far fa-envelope me-3 mt-2 fs-sm"></div>
+                            <a href="mailto:admin@domain.com" class="text-light">admin@domain.com</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-sm-4">
+
+                    <!-- Heading -->
+                    <h5 class="text-xs light">
+                        Opening hours
+                    </h5>
+
+                    <!-- Text -->
+                    <div class="mb-3">
+                        <div class="text-xs">Monday - Thursday</div>
+                        <div class="font-serif">10:00 AM - 11:00 PM</div>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="mb-6">
+                        <div class="text-xs">Friday - Sunday</div>
+                        <div class="font-serif">12:00 AM - 03:00 AM</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- Copyright -->
+                    <div class="d-flex align-items-center my-4">
+                        <hr class="hr-sm me-3" style="height: 1px;"> © 2021 foodorder. All rights reserved.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

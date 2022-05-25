@@ -41,6 +41,16 @@ body{
     font-weight: 800;
 }
 
+.contactCall a{
+    display: inline-block;
+   font-weight: 400;
+   line-height: 1.5;
+   text-align: center;
+   vertical-align: middle;
+   color: var(--red);
+   text-decoration: none;
+   font-size: 1.35rem;
+}
 
 /* component end */
 .topbar{
@@ -121,6 +131,7 @@ body{
     text-align: center;
     vertical-align: middle;
 }
+
 .callus a{
     color: #000;
     text-decoration: none;
@@ -330,6 +341,179 @@ footer {
     background-color: #000;
     color: var(--gray);
 }
+.storyImg{
+    height: 25rem;
+    object-fit: cover;
+}
+.aboutSpecality{
+    background-image: url('../img/about2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    background-attachment: fixed;
+    position: relative;
+    background-color: none;
+}
+
+
+/* menu  */
+.menuCategories{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.menuCategory a{
+    text-decoration: none;
+    color: var(--black);
+    border: 1px solid #000;
+    padding: 0.3rem;
+}
+.menuCategory a:hover{
+    color: var(--gray);
+}
+
+.menuCatgHead{
+    color: var(--gray);
+}
+.menuRow{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menuRow  img{
+    width: 20%;
+    object-fit: cover;
+    /* border: 2px solid red; */
+}
+.menuDetails ul{
+    /* border: 2px solid black; */
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menuTitle a{
+    text-decoration: none;
+    color: var(--red);
+    font-weight: 500;
+}
+.menuPrice{
+    color: var(--black);
+    font-weight: 500;
+}
+.menuRow:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+}
+
+
+
+
+
+
+/* check out  */
+.orderItem{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.orderItem .orderImg{
+    width: 20%;
+    object-fit: contain;
+}
+.orderDetails{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.orderItemTitle{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.orderItemPrice{
+    color: var(--secondary-black);
+    font-weight: 500;
+}
+/* .orderQuantiy{
+    border: 2px solid blue;
+} */
+.cartQuantity{
+    border: 2px solid var(--orange);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartItemNum{
+    text-align: center;
+    /* width: auto; */
+}
+.cartSub, .cartAdd{
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+/* .checkoutBill{
+    border: 2px solid red;
+} */
+.billItem{
+    /* border: 2px solid blueviolet; */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--gray);
+}
+
+.billItem li{
+    font-size: 1.2rem;
+    color: var(--black);
+}
+.grandTotal{
+    border: none;
+}
+.grandTotal li{
+    color: #000;
+    font-weight: 500;
+}
+.cupon{
+    font-style: italic;
+    text-transform: uppercase;
+}
+.addCupon, .cuponRemove{
+    cursor: pointer;
+}
+.addrTitle{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Atitle{
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 500;
+}
+.aChange{
+    cursor: pointer;
+}
+.addrIteemHead{
+    color: #000;
+    font-weight: 500;
+}
+.cancelpolicy{
+    color: var(--secondary-gray);
+    font-size: 1rem;
+}
+
 
 
 @media screen and (max-width: 900px){
@@ -378,6 +562,10 @@ footer {
     }
     .reservationformBtnGrp button{
         width: 100%!important;
+    }
+    .contactSecBx{
+        display: flex;
+        flex-direction: column-reverse;
     }
 
 

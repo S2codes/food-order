@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/8f7c5a9c29.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Checkout | Dj Biriyani</title>
+</head>
+
+<body>
+    <header>
+        <!-- topbar  -->
+        <div class="topbar p-2">
+            <ul class="p-0 ms-4 m-0 list-unstyled">
+                <li class="me-3"><i class="fas fa-map-marker-alt"></i> Siliguri</li>
+                <li class="me-3 topbarClock"><i class="fas fa-clock"></i> Mon-Sun: 11.30AM - 10.30PM</li>
+            </ul>
+
+            <ul class="p-0 me-4 m-0 list-unstyled">
+                <li class="me-3">Zomato</li>
+                <li>Swigy</li>
+            </ul>
+
+        </div>
+        <!-- navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-light px-4 " id="mainNav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex">
+                        <div class="callus p-2">
+                            <a href="#" id="callus"><i class="fas fa-phone-alt"></i> Call to Order</a>
+                        </div>
+                        <button class="ms-3 btn btn-reserve">Reservation</button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="mb-5 mt-5">
+
+        <div class="row">
+            <div class="col-md-11 col-12 mx-auto p-0">
+                <!-- latest products -->
+                <div class="container-fluid sectionBx p-0 mb-4">
+                    <h2 class="heading mb-3">Checkout</h2>
+                    <div class="row ">
+
+                        <div class="col-md-6 col-12 p-3">
+
+                            <div class="orderList">
+                                <div class="orderItem p-1 mb-3">
+
+                                    <div class="orderDetails">
+                                        <img src="assets/img/categories/rice.png" alt="" class="orderImg">
+                                        <div class="orderinfo ms-3">
+                                            <p class="orderItemTitle mb-1">Chiken Biriyani </p>
+                                            <p class="orderItemPrice">₹250</p>
+                                            <input type="hidden" value="250" id="itemPrice1">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="orderQuantiy">
+                                        <div class="cartQuantity mb-2">
+                                            <i class="bi bi-dash-lg mx-2 cartSub" data-Id="1"></i>
+                                            <span class="cartItemNum" id="cartQuantityNum1">1</span>
+                                            <input type="hidden" name="" value="1" id="cartQuantityInput1">
+                                            <i class="bi bi-plus-lg mx-2 cartAdd" data-Id="1"></i>
+                                        </div>
+                                        <input type="hidden" name="" id="totalItemInput1" value="250">
+                                        <p class="orderItemPrice" id="totalItemprice1">₹250</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="orderItem p-1 mb-3">
+
+                                    <div class="orderDetails">
+                                        <img src="assets/img/categories/soup.jpg" alt="" class="orderImg">
+                                        <div class="orderinfo ms-3">
+                                            <p class="orderItemTitle mb-1">Veg Briyani </p>
+                                            <p class="orderItemPrice">₹150</p>
+                                            <input type="hidden" value="150" id="itemPrice2">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="orderQuantiy">
+                                        <div class="cartQuantity mb-2">
+                                            <i class="bi bi-dash-lg mx-2 cartSub" data-Id="2"></i>
+                                            <span class="cartItemNum" id="cartQuantityNum2">1</span>
+                                            <input type="hidden" name="" value="1" id="cartQuantityInput2">
+                                            <i class="bi bi-plus-lg mx-2 cartAdd" data-Id="2"></i>
+                                        </div>
+                                        <input type="hidden" name="" id="totalItemInput2" value="250">
+                                        <p class="orderItemPrice" id="totalItemprice2">₹150</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-12 checkoutBill p-3">
+                            <form action="#" method="post">
+
+                                <ul class="billItem px-2 m-0">
+                                    <li>Total Items</li>
+                                    <li>2</li>
+                                </ul>
+                                <ul class="billItem p-2 m-0">
+                                    <li>Total Price</li>
+                                    <li>₹400</li>
+                                </ul>
+
+                                <ul class="billItem p-2 m-0">
+                                    <li class="text-primary">
+                                        Coupon <span class="cupon">(flat50)</span>
+                                        <small class="text-danger cuponRemove">Remove</small>
+                                    </li>
+                                    <li class="text-primary">-₹200</li>
+                                </ul>
+
+                                <ul class="billItem grandTotal p-2 mt-2">
+                                    <li>Grand Total</li>
+                                    <li>₹200</li>
+                                </ul>
+
+                                <p class="p-2 m-0">Have any Cupon? click Here <span class="text-primary addCupon">Add
+                                        Cupon</span></p>
+
+
+
+                                <div class="addressBx mt-2">
+                                    <ul class="d-flex addrTitle p-0">
+                                        <li class="Atitle">Address</li>
+                                        <li class="text-primary aChange">Add Address</li>
+                                    </ul>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1" checked>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <p class="mb-1 addrIteemHead">Home</p>
+                                            Siliguri, Darjling, West Bengal, Pin-734004
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <p class="mb-1 addrIteemHead">Office</p>
+                                            Siliguri, Darjling, West Bengal, Pin-734004
+                                        </label>
+                                    </div>
+
+                                    <p class="Atitle mt-3 mb-0">Cancelation</p>
+                                    <p class="cancelpolicy"> laudantium nisi sit, voluptas quaerat? Perspiciatis facere
+                                        dolores tempore expedita est maxime saepe? Ad nihil excepturi quis maxime
+                                        itaque!</p>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payType"
+                                            id="flexRadioDefault1" checked>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <p class="mb-1 addrIteemHead">Pay Now</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio" name="payType"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <p class="mb-1 addrIteemHead">Pay on Delivery</p>
+                                        </label>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-lg btn-primary w-100">CheckOut</button>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+    <footer class="py-7 py-md-9 pt-5 ">
+        <div class="container px-4">
+            <div class="row gx-7">
+                <div class="col-sm-4">
+
+                    <!-- Heading -->
+                    <h5 class="text-xs text-light">
+                        About Us
+                    </h5>
+
+                    <!-- Text -->
+                    <p class="mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorum, sint corporis
+                        nostrum, possimus
+                        unde eos vitae eius quasi saepe.
+                    </p>
+
+                </div>
+                <div class="col-sm-4">
+
+                    <!-- Heading -->
+                    <h5 class="text-xs text-light">
+                        Contact info
+                    </h5>
+
+                    <!-- List -->
+                    <ul class="list-unstyled mb-6">
+                        <li class="d-flex mb-2">
+                            <div class="fas fa-map-marker-alt me-3 mt-2 fs-sm"></div>
+                            1234 Altschul, Los Angeles, CA 10027-0000
+                        </li>
+                        <li class="d-flex mb-2">
+                            <div class="fas fa-phone me-3 mt-2 fs-sm"></div>
+                            +1 987 654 3210
+                        </li>
+                        <li class="d-flex">
+                            <div class="far fa-envelope me-3 mt-2 fs-sm"></div>
+                            <a href="mailto:admin@domain.com" class="text-light">admin@domain.com</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-sm-4">
+
+                    <!-- Heading -->
+                    <h5 class="text-xs light">
+                        Opening hours
+                    </h5>
+
+                    <!-- Text -->
+                    <div class="mb-3">
+                        <div class="text-xs">Monday - Thursday</div>
+                        <div class="font-serif">10:00 AM - 11:00 PM</div>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="mb-6">
+                        <div class="text-xs">Friday - Sunday</div>
+                        <div class="font-serif">12:00 AM - 03:00 AM</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- Copyright -->
+                    <div class="d-flex align-items-center my-4">
+                        <hr class="hr-sm me-3" style="height: 1px;"> © 2021 foodorder. All rights reserved.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/chcekout.js"></script>
+</body>
+
+</html>
