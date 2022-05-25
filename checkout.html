@@ -46,6 +46,12 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="food.html">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="about-us.html">About</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -157,12 +163,12 @@
                                     <li>₹400</li>
                                 </ul>
 
-                                <ul class="billItem p-2 m-0">
-                                    <li class="text-primary">
+                                <ul class="billItem p-2 m-0" id="cuponConatiner">
+                                    <!-- <li class="text-primary">
                                         Coupon <span class="cupon">(flat50)</span>
                                         <small class="text-danger cuponRemove">Remove</small>
                                     </li>
-                                    <li class="text-primary">-₹200</li>
+                                    <li class="text-primary">-₹200</li> -->
                                 </ul>
 
                                 <ul class="billItem grandTotal p-2 mt-2">
@@ -170,7 +176,7 @@
                                     <li>₹200</li>
                                 </ul>
 
-                                <p class="p-2 m-0">Have any Cupon? click Here <span class="text-primary addCupon">Add
+                                <p class="p-2 m-0">Have any Cupon? click Here <span class="text-primary addCupon" id="addCuponBtn">Add
                                         Cupon</span></p>
 
 
@@ -178,7 +184,7 @@
                                 <div class="addressBx mt-2">
                                     <ul class="d-flex addrTitle p-0">
                                         <li class="Atitle">Address</li>
-                                        <li class="text-primary aChange">Add Address</li>
+                                        <li class="text-primary aChange" id="addAddress">Add Address</li>
                                     </ul>
 
                                     <div class="form-check">
@@ -236,6 +242,71 @@
 
     </main>
 
+
+<!-- cupon Modal -->
+<div class="modal fade" id="cuponModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Cupon</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" id="cuponModaform">
+              <input type="text" class="form-control text-uppercase" id="cuponInput" placeholder="Cuppon" required>
+              <small class="text-danger" id="cuponAlert"></small>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary" id="applyCupon">Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- address modal  -->
+  <div class="modal fade" id="addressModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Address</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" method="post">
+              <div class="mb-3">
+                  <label for="" class=" form-label">Save Address as</label>
+                  <select name="add_type" class="form-select">
+                      <option value="home" selected>Home</option>
+                      <option value="office">Office</option>
+                      <option value="other">Other</option>
+                  </select>
+              </div>
+  
+              <div class="mb-3">
+                  <label for="" class=" form-label">Area</label>
+                  <input type="text" class="form-control" placeholder="Enter Area">
+              </div>
+              <div class="mb-3">
+                  <label for="" class=" form-label">Land Mark</label>
+                  <input type="text" class="form-control" placeholder="Enter Landmark">
+              </div>
+              <div class="mb-3">
+                  <label for="" class=" form-label">Location</label>
+                  <input type="text" class="form-control" placeholder="Enter Location.">
+              </div>
+  
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add Address</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 
     <footer class="py-7 py-md-9 pt-5 ">
